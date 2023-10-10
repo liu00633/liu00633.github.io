@@ -47,30 +47,31 @@
         <section>
             <h3> we love to hear from you</h3>
             <!--add form-->
-            <form action="thank.html" method="post">
+            <form action="thanks.html" method="post">
                 <div>
                     <label for="fullname">name</label>
                     <input type="text" id="fullname" name="fullname">
                 </div>
                 <div>
-                    <label for="">email</label>
-                    <input type="text" id="your email" name="your email" placeholder="algonquincollege email"
-                        value="liu@algonquincollegelive.com" required>
+                    <label for="youremail">email</label>
+                    <input type="email" id="youremail" name="youremail" placeholder="algonquin email"
+                     value="@algonquinlive.com" required>
                 </div>
                 <div>
-                    <label for="">message</label>
+                    <label for="message">message</label>
                     <textarea name="message" id="message"></textarea>
                 </div>
                 <div>
-                    <label for="">how many tivket &#40; sold in pairs&#41;</label>
-                    <input type="number" id="ticket" min="2" max="10" step="2" value="2">
+                    <label for="tickets">how many ticket &#40; sold in pairs&#41;</label>
+                    <input type="number" id="ticket" name="ticket" min="2" max="10" step="2" value="2">
                 </div>
                 <div>
                     <label for="row">row</label>
                     <select name="row" id="row">
-                        <option value=" front">front row</option>
-                        <option value=" center">center row</option>
-                        <option value="back">back</option>
+                        <option value="front">front row</option>
+                        <option value="center"selected>center row</option>
+                        <option value="back">back row</option>
+                        </select>
                 </div>
                 <div>
                      <h3>have you been here before</h3>
@@ -81,10 +82,11 @@
                      <input type="radio" name="past" id="no">
                 </div>
                 <div>
-                    <h3>police</h3>
+                    <h3>policies</h3>
                     <input type="checkbox" name="policies" id="policies" required>
                     <label for="policies"> i agree to terms and conditon.</label>
                 </div>
+
                 <button type="submit">submit</button>
 
             </form>
@@ -98,7 +100,7 @@
 
     <footer>
         <!--special-->
-
+     &copy;copyright yang coffee,2023
     </footer>
 
 </body>
