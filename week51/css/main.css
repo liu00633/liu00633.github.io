@@ -1,0 +1,47 @@
+/* css comment */
+body{
+    color:red;
+}
+main article .underline{
+    border-bottom: 1px solid green;
+}
+
+article .underline{
+    border-bottom: 1px solid red;
+
+
+}
+
+p{
+    color:green;font-style:italic;
+}
+
+
+h1,h2{
+    font-family: arial, Arial, Helvetica, sans-serif;
+}
+aside p{
+    font-weight: bold;
+
+}
+.big{
+    font-size: 150%;
+}
+#{
+    font-size: 50%;
+}
+ 
+a:link{
+    color: green;
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    color: orange;
+}
+a:active{
+    color: blue;
+}
+
+
