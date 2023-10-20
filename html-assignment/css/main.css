@@ -1,0 +1,43 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+header,footer{
+    background-color: lightblue;
+}
+.site-title{
+    color:green;
+}
+#my-image{
+    box-shadow: 0 0 2px 1px black;
+}
+ul{
+    list-style:square;
+}
+
+.hb li:nth-child(odd){
+    background-color: lightpink;
+}
+
+
+
+    
+
+nav ul a,
+nav a{
+    background-color:lightblue;
+    border: 1px solid;
+    text-decoration: none;
+}
+nav ul{
+    list-style-type:none;
+}
+
+nav a:hover{
+   background-color:lightgreen;
+}
+table{
+    border: 1px black solid;
+}
+

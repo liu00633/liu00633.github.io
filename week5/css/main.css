@@ -67,11 +67,11 @@ h3~ul{
     text-transform:uppercase;
 }
 
-
-/* attribute sel*/
 [href="treatoftheweek"]{
     font-weight: bold;
 }
+/* attribute selector*/
+
 [src$=".jpg"]{
     border: 8px solid darkslategray;
 }
