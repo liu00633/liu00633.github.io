@@ -6,6 +6,7 @@ shortcut for adding a vomment is  comnd+/
 body{
     font-family: Arial,helvetica,sans-serif;
     color: darkslategrey;
+    background-image: url(../images/white_brick_wall.png);
      
 }
 h1{
@@ -27,14 +28,23 @@ nav ul{
     list-style: none;
 }
 nav ul a{
-    color: red;
+    color:darkslategray;
     text-decoration: none;
+    font-size: 1.5rem; 
+     /*1,5rem(html font size)=16px*1.5=24*/
 }
 
 /*selecting element with ID value*/
 /* as a best practice try to avoid using ids for style*/
 #treatoftheweek{
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    /* color image repeat position-x position-y */
+    background:cadetblue url(../images/bread.jpg) no-repeat center;
+    background-size: cover;
+    font-size: 1.25rem;
+    1,25*16
+    padding: 1px;
+    width: 50%;
 }
 
 .blue-link{
@@ -51,10 +61,15 @@ nav ul a{
     color: antiquewhite;
 }
 
+ 
 /* combinators*/
 /* director child selecctor only select direct child*/
 article>p{
     font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
 }
 
 /*adjecent sibiling */
