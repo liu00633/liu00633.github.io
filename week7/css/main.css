@@ -1,0 +1,186 @@
+/*
+this is a css comment
+shortcut for adding a vomment is  comnd+/
+*/
+
+body{
+    font-family: Arial,helvetica,sans-serif;
+    color: darkslategrey;
+    background-image: url(../images/white_brick_wall.png);
+     
+}
+/* box model*/
+section p{
+    width:50%;
+    /*2value=first valur top/buttom|second value left/right*/
+    padding:1rem.5rem;
+}
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+
+h1{
+    color:cadetblue;
+
+}
+p{
+    background-color: aliceblue;
+}
+
+/*
+selecting multiple element*/
+h1,h2,h3,h4{
+    text-decoration: underline;
+}
+/*selecting child element
+*/
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    width:49%;
+    padding:1em; 
+    box-sizing: border-box;
+}
+nav ul a{
+    color:darkslategray;
+    text-decoration: none;
+    font-size: 1.5rem; 
+    display: block;
+     /*1,5rem(html font size)=16px*1.5=24*/
+}
+
+/*selecting element with ID value*/
+/* as a best practice try to avoid using ids for style*/
+#treatoftheweek{
+    /* background-color: cadetblue; */
+    /* color image repeat position-x position-y */
+    background:cadetblue url(../images/bread.jpg) no-repeat center;
+    background-size: cover;
+    font-size: 1.25rem;
+    /* 1,25*16 */
+    padding: 1px;
+    width: 50%;
+}
+
+.blue-link{
+    background-color: darkslategray;
+    color:antiquewhite;
+    text-decoration: none;
+}
+
+.large-text{
+    font-size: 24px;
+}
+
+.white-text{
+    color: antiquewhite;
+}
+
+/* combinators*/
+/* director child selecctor only select direct child*/
+article>p{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+/*adjecent sibiling */
+h3+ul{
+    border:1px solid black
+}
+
+/* sibling selector*/
+h3~ul{
+    text-transform:uppercase;
+}
+
+[href="treatoftheweek"]{
+    font-weight: bold;
+}
+/* attribute selector*/
+
+[src$=".jpg"]{
+    border: 8px solid darkslategray;
+}
+
+/* psuedo classed*/
+/* style  the navigaiton*/
+nav ul a,
+nav ul a:link,
+nav ul a:visited{
+    background-color: antiquewhite;
+    /* horizontal,vertical,blur,spread,cokor*/
+    box-shadow: -2px 2px 4px 2px black;
+}
+nav ul .current,
+nav ul a:hover,
+nav ul a:focus{
+    text-decoration: underline;
+}
+
+
+nav ul a:active{
+    box-shadow: 0 0 4px 2px;
+}
+/*postion sel*/
+/*first-child and :last-child*/
+aside ul li:first-child{
+    font-weight: bold;
+}
+
+aside ul li:last-child{
+    font-weight: bold;
+}
+
+
+/*style the table*/
+table{
+    border-collapse: collapse;
+}
+
+/* nth-child selector  even/odd*/
+tbody tr:nth-child(even){
+    /* hex color value with 6 charcactors*/
+    background-color: #d5836c;
+}
+
+table th:nth-child(n),
+table td:nth-child(n) {
+    border:1px solid #000;
+}
+
+
+/* formula nth-child*/
+table td:nth-child(2n+1){
+    background-color: rgba(0 0, 0, 0);
+}
+
+/* specificity*/
+/* fomula: inline style id,class,Tag-name
+
+
+
+
+
+
+
+
+
+
+
+
+.large-text{
+    font-size: 24px;
+}
+
+
+
+.white-text{
+    color: antiquewhite;
+}

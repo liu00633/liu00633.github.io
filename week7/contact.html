@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>yang's coffee shop-home</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!--this is an html comment-->
+    <!--CTRL/COMMAND+/to add or remove a comment-->
+    <!--site header-->
+    <header>
+        <h1> yang's coffee shop</h1>
+        <nav>
+            <ul>
+                <li><a hef="index.html">home</a></li>
+                <li><a href="contact.html" class="current"> contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--adding table for hours-->
+        <h2> contact us</h2>
+        <table border>
+            <caption> Hours of operation</caption>
+            <thead>
+                <tr>
+                    <th>day</th>
+                    <th>hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>sat</td>
+                    <td>8am-11am</td>
+                </tr>
+                <tr>
+                    <td>sun</td>
+                    <td>close</td>
+                </tr>
+            </tbody>
+
+
+        </table>
+        <!--add sectionfor contact form-->
+        <section>
+            <h3> we love to hear from you</h3>
+            <!--add form-->
+            <form action="thanks.html" method="post">
+                <div>
+                    <label for="fullname">name</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div>
+                    <label for="youremail">email</label>
+                    <input type="email" id="youremail" name="youremail" placeholder="algonquin email"
+                     value="@algonquinlive.com" required>
+                </div>
+                <div>
+                    <label for="message">message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div>
+                    <label for="tickets">how many ticket &#40; sold in pairs&#41;</label>
+                    <input type="number" id="ticket" name="ticket" min="2" max="10" step="2" value="2">
+                </div>
+                <div>
+                    <label for="row">row</label>
+                    <select name="row" id="row">
+                        <option value="front">front row</option>
+                        <option value="center"selected>center row</option>
+                        <option value="back">back row</option>
+                        </select>
+                </div>
+                <div>
+                     <h3>have you been here before</h3>
+                     <label for="yes">yes</label>
+                     <input type="radio" name="past" id="yes">
+
+                     <label for="no">no</label>
+                     <input type="radio" name="past" id="no">
+                </div>
+                <div>
+                    <h3>policies</h3>
+                    <input type="checkbox" name="policies" id="policies" required>
+                    <label for="policies"> i agree to terms and conditon.</label>
+                </div>
+
+                <button type="submit">submit</button>
+
+            </form>
+
+        </section>
+    </main>
+
+
+
+    <!--site footer-->
+
+    <footer>
+        <!--special-->
+     &copy;copyright yang coffee,2023
+    </footer>
+
+</body>
+
+</html>
