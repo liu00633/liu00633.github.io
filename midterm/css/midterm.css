@@ -104,3 +104,7 @@ div form {
     height: 5em;
     border: 0.5px solid rgb(168, 164, 164);
 }
+
+footer{
+    text-align: right;
+}
