@@ -1,0 +1,54 @@
+html{
+    font-size:24px;
+  }
+  h1{
+    color:darkgreen;
+    
+    font-family:arial,sans;
+    text-align:center;
+  
+    margin-top:0;
+    padding:40px;
+  }
+  a{
+    text-decoration:none;
+    display:inline-block;
+    width:24%;
+    text-align:center;
+    color:silver;
+    padding-top:8px;
+    border-right:0.8px solid;
+    
+  }
+  a:nth-child(5){
+    border-right:none;
+  }
+  body{
+    background-image: url('https://images.fineartamerica.com/images-medium-large/fresh-moss-and-water-drops-in-green-nature-peerasith-chaisanit.jpg')
+    
+  }
+  img{
+    float:left;
+    margin:0 10px 10px 0;
+    width:200px
+  }
+  
+  /* @media only screen and (min-width:600px){
+    h1{
+      color:red;
+      size:2em;
+    }
+    img{
+      float:right;
+      width:400px;
+    }
+   
+  } */
+  @media only screen and (max-width:800px){
+    a{
+      text-decoration:underline; 
+      color:green;
+      
+    }
+    
+  }
