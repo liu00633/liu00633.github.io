@@ -1,0 +1,99 @@
+html{ 
+    font-size: 16px;
+}
+h1{
+    color: beige;
+    text-align: center;
+    padding: 60px;
+    position: absolute;
+    top:30%;
+    left: 40%;
+}
+nav ul {
+    list-style:none;
+    justify-content: center;
+    text-align: center;
+    margin:0 auto;
+}
+
+nav ul li{
+    text-decoration: none;
+    
+     
+}
+nav ul a{
+    text-decoration: none;
+    margin: 0 auto;
+}
+nav ul li{
+    display: inline-block;
+    width: 33%;
+    padding:1em; 
+    box-sizing: border-box;
+    border-right: 1px solid grey;
+}
+nav ul li:nth-child(3){
+    border:none
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkolivegreen;
+  
+}
+
+
+header{
+    position: relative;
+    /* background: lightcyan url(../images1/lotus1.jpg) no-repeat center;
+    background-size: cover;
+  
+    height: 150px; */
+    width: 100%;
+    
+}
+.today{
+    width: 100%;
+}
+.wrapper1{
+    
+    background-color:rgb(159, 221, 221);
+}
+.wrapper{
+    max-width: 1000px;
+    margin:0 auto;
+    background-color:lightcyan;
+
+}
+
+
+.lotus{
+width: 450px;
+}
+.picsrc img{
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-top: 1px;
+}
+
+
+
+div form{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 3px;
+}
+
+#fullname,#emailaddress{
+    width: 975px;
+    border:transparent;
+}
+
+#message{
+    width: 975px;
+    height: 5em;
+    border:transparent;
+}
+

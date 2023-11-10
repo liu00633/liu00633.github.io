@@ -64,16 +64,36 @@ nav ul a{
     /* 1,25*16 */
     padding: 1px;
     width: 50%;
+    position: relative;
+    padding: 1em 1em 4em 1em;
+}
+
+/* abosulute postion*/
+.blue-link.large-text{
+    position: absolute;
 }
 
 .blue-link{
     background-color: darkslategray;
     color:antiquewhite;
     text-decoration: none;
+    padding: 1.5em;
+    width:300px;
+    display: block;
 }
 
 .large-text{
     font-size: 24px;
+    line-height: 1.5em;
+}
+/*example of float layout*/
+article,
+aside{
+    width:80%;
+    background-color: rgb(255, 255, 255,0.6);
+    padding:1.5em;
+    box-sizing: border-box;
+    float: left;
 }
 
 .white-text{
@@ -160,6 +180,19 @@ table td:nth-child(n) {
 table td:nth-child(2n+1){
     background-color: rgba(0 0, 0, 0);
 }
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100;
+    background-color: rgb(0 0 0 0 ,);
+    z-index: 999;
+}
+
+
+
+
 
 /* specificity*/
 /* fomula: inline style id,class,Tag-name
