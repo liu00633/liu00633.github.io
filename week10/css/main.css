@@ -5,7 +5,7 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;  
-
+    box-sizing: border-box;
 }
 
 body{
@@ -15,7 +15,7 @@ body{
 *,
 *:after,
 *:before {
-  box-sizing:inherit ;
+  box-sizing:inherit;
 }
 
 .clearfix::after{
@@ -24,7 +24,7 @@ body{
     clear:both;
 }
 
-img{
+img {
     width:100%;
 }
 /*love hate*/
@@ -46,9 +46,8 @@ h5{
     font-weight: bold;
     margin: 1em 0 0.5em;
 }
-
-
-
+/* to ensure size are proportionate */
+/* http://www.modularscale.com */
 h1{
     font-size: 5.063rem;
 }
@@ -94,6 +93,27 @@ p{
     text-align:center;
     text-transform: uppercase;
 }
+
+.nav-list li{
+    border-bottom:1px solid grey;
+    text-align: center;
+    
+}
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited{
+    display: block;
+    padding:1em 0;
+    text-decoration:none;
+}
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a:current {
+    background-color:#00add8;
+    color:inherit;
+}
+
+
 .btn{
     text-decoration:none;
     display:inline-block;
@@ -108,6 +128,19 @@ p{
     background-color: #00add8;
     color:inherit;
 }
+
+.actions-list{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.actions-list li {
+max-width: 50%;
+padding:1em;
+text-align: center;
+font-size: 1.5rem;
+}
+/* footer style */
 .site-footer{
     margin-top: 20px;
     padding: 20px;
@@ -139,15 +172,34 @@ p{
 .banner h1{
     color:white;
 }
+/* navigation */
+.nav-list{
+    display: flex;
+}
+
+.nav-list li{
+    flex:1;
+    border:none;
+    border-right: 1px solid grey;
+}
+
+.nav-list li:last-child{
+    border:none;
+}
 /* *******app section******** */
 .app img{
     width:40%;
     float:left;
     margin-right: 1em;
 }
-.app.btn{
+.app .btn{
     float:right;
 }
 
-
+/* media query 800px */
+@media screen and (min-width:800px) {
+    .actions-list li{
+        max-width:20%;
+    }
+}
 
