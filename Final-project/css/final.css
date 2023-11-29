@@ -1,6 +1,6 @@
 html{
     font-size: 16px;
-   
+    font-family: open sans;
 }
 
 .homebox{
@@ -20,8 +20,8 @@ html{
     } 
 
  header img{
-    width: 678px;
-    height:200px;
+    width: 100%;
+   height: 200px;
     display: block;
  }
   
@@ -44,19 +44,19 @@ div a{
 
 .container1{
     position:relative;
-    max-width: 678px;
+  
     
 }
 
-.greyfloat{
+/* .greyfloat{
     position:absolute;
     top:0;
     background-color: #2222225e;
-}
+} */
 
 
 h1{
-    position:absolute;
+    /* position:absolute; */
     font-size: 5em;
     color:white;
     background-color:rgba(0,0,0,0.5); 
@@ -201,10 +201,10 @@ h1{
     color:white;
 }
 .container8{
-    position: relative;
+    /* position: relative; */
     width:680px;
 
 }
 .container8 h3{
-    position:absolute
+    /* position:absolute */
 }
